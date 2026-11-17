@@ -1,1 +1,35 @@
-/* Här skrivs all din CSS */
+:root {
+  --prim-blue: #286EAA; 
+  --prim-orang: #D93707;
+  --sec-blue: #313E58;
+}
+
+#wrapper {
+    display: grid;
+    overflow: hidden;
+    grid-gap: 10px;
+    height: auto; /*plz change*/
+    width: 95vw;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--prim-blue);
+    grid-template-rows: 10%, 5%, 77.5%, 7.5%;
+    grid-template-columns: 15%, 85%;
+    grid-template-areas: 
+    'hd, hd' /*fix*/
+    'nv, nv'
+    'as, mn'
+    'ft, ft'
+    ;
+}
+
+#hd{
+    grid-area: hd;
+    background-color: var(--prim-orang);
+}
+
+#nv {
+    grid-area: nv;
+    background-color: var(--sec-blue);
+
+}
