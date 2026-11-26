@@ -38,12 +38,18 @@ header{
     color: var(--white1);
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+    display: flex;
+    align-items: center;
 }
 
 nav {
     grid-area: nv;
     background-color: var(--sec-blue);
     flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 nav a   {
@@ -55,7 +61,43 @@ main {
     grid-area: mn;
     background-color: var(--sec-blue);
 
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+
 }
+
+#advert {
+    background: white;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: all 1s ease;
+
+}
+
+#advert p {
+    padding: 30px;
+}
+
+#advert a {
+    background-color: black;
+    column-rule-color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px, 50px;
+
+}
+
+#advert:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 
 aside {
     grid-area: as;
